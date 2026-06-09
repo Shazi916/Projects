@@ -1185,6 +1185,15 @@
     .hero-actions .btn-primary { width: 100%; justify-content: center; }
   }
 
+
+  .mpb-book-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 50px rgba(244,162,97,0.5) !important;
+  }
+  @media (max-width: 900px) {
+    .mpb-book-btn { width: 100%; justify-content: center; text-align: center; }
+  }
+
 </style>
 </head>
 <body>
@@ -1343,6 +1352,9 @@
       <div class="mpb-label">Complete 1-Month Program</div>
       <div class="mpb-price">30,000 <span>PKR</span></div>
       <div class="mpb-sub">6 Sessions · 1 Month · Full Support</div>
+      <a href="#mentorship-form" onclick="event.preventDefault();document.getElementById('mentorship-form').scrollIntoView({behavior:'smooth'})" class="btn-primary mpb-book-btn" style="background:linear-gradient(135deg,#f4a261,#e76f51);box-shadow:0 0 30px rgba(244,162,97,0.3);margin-top:18px;display:inline-flex;font-size:15px;padding:14px 28px;">
+        📅 Book Now →
+      </a>
     </div>
     <div class="mpb-right">
       <div class="mpb-item">✅ 6 Live 1-on-1 Sessions</div>
@@ -1408,7 +1420,7 @@
   </div>
 
   <!-- Mentorship Booking Form -->
-  <div class="mentorship-form-wrap">
+  <div class="mentorship-form-wrap" id="mentorship-form">
     <div class="mentorship-form-side">
       <div class="section-tag" style="margin-bottom:16px;">Enroll Now</div>
       <h3 style="font-family:'Syne',sans-serif;font-size:24px;font-weight:800;margin-bottom:8px;">Book Your Spot</h3>
